@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabBtns = document.querySelectorAll(".tab-btn");
+    const skillContainers = document.querySelectorAll(".skills-container");
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        // Remove active from all buttons and containers
+        tabBtns.forEach(b => b.classList.remove("active"));
+        skillContainers.forEach(c => c.classList.remove("active"));
+
+        // Activate the clicked button + its container
+        btn.classList.add("active");
+        document.getElementById(btn.dataset.target).classList.add("active");
+      });
+    });
+  });
+</script>
+
+    <header class="header">
+        <a href="#home" class="logo" >Anshu <span>Kumari</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#internship">Internship</a>
+            <a href="#skill">Skill</a>
+            <a href="#services">Services</a>
+            <a href="#project">Project</a>
+            <a href="#certificate">Certificate</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's<span>Anshu</span></h1>
+            <h3 class="text-animation">I am a <span> </span></h3>
+            <!-- Highlighted Quote -->
+        <p class="quote">"Code is like humor. When you have to explain it, it's bad."</p>
+
+        <!-- Normal Intro Text -->
+        <p class="intro">
+            Transforming raw data into powerful business insights.  
+            I'm a passionate Data Analyst with a strong academic foundation 
+            and real-world experience in data analytics and interactive data visualization.
+        </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/anshukumari2317" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/anshu1917"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/anshu_23_17"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="mailto:anshu172004@gmail.com"><i class='bx bxl-gmail' ></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+            
+    </section>
+    <!-- About Me -->
+<section class="about" id="about">
+    <h2 class="heading">About Me</h2>
+
+    <div class="about-container">
+        <!-- Left: Image -->
+        <div class="about-img">
+            <img src="IMG-20221226-WA0056.jpg" alt="About Me">
+        </div>
+
+        <!-- Right: Content -->
+        <div class="about-content">
+            <h3>Who Am I?</h3>
+            <p>
+        I'm <b>Anshu Kumari</b>, currently pursuing MCA (VTU Karnataka) and a BCA graduate from Patliputra University.
+        I'm a results-driven Data Analyst with a passion for uncovering hidden patterns and solving real-world problems through data. With a solid academic background in Computer Applications and hands-on expertise in Python, SQL, Excel, and Power BI, I specialize in transforming raw datasets into meaningful business insights.
+      </p>
+
+      <p>I've completed a certified internship in Data Preprocessing & Analytics at  IIIT Dharwad, where I applied data science tools to clean, analyze, and visualize large-scale datasets. Whether it's uncovering trends, optimizing processes, or enabling smarter decisions, I thrive on making data work smarter.
+        My goal is to leverage my skills in data analytics and visualization to drive impactful business solutions and contribute to innovative projects.
+        I am always eager to learn and adapt to new challenges, and I believe that my diverse skill set and passion for data will make a significant contribution to any team.
+      </p>
+          <!-- Quick Facts -->
+            <div class="quick-facts">
+                <h3>📌 Quick Facts</h3>
+                <ul>
+                    <li><strong>Location:</strong>India</li>
+                    <li><strong>Education:</strong> MCA (Pursuing)</li>
+                    <li><strong>Focus:</strong> Data Analytics</li>
+                    <li><strong>Experience:</strong> IIIT Dharwad Intern</li>
+                </ul>
+            </div>
+
+            <!-- Interests -->
+            <div class="interests">
+                <h3>🎯 Interests</h3>
+                <ul>
+                    <li><strong>Passion for Travel:</strong> Enhancing adaptability and cultural awareness</li>
+                    <li><strong>Vocal Performer:</strong> Fostering creativity and confidence</li>
+                    <li><strong>Strategic Gamer:</strong> Developing problem-solving and decision-making skills</li>
+                </ul>
+            </div>
+
+
+            <a href="#resume" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
+
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+
+         <div class="timeline-items">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2017-2018</div>
+                     <div class="timeline-content">
+                        <h3>Secondary School</h3>
+                          <p>S. Raza Girls High School<br>Patna, Bihar<br>
+                            Central Board of Secondary Education(CBSE)                           
+                        </p>
+                     </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018-2020</div>
+                     <div class="timeline-content">
+                        <h3>High School</h3>
+                          <p>B.D. College<br>Patna, Bihar<br>
+                            Patliputra University                           
+                        </p>
+                     </div>
+               
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020-2023</div>
+                     <div class="timeline-content">
+                        <h3>Bachelor of Computer Applications(BCA)</h3>
+                          <p>B.D. College<br>Patna, Bihar<br>
+                            Patliputra University                           
+                        </p>
+                     </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023-2025</div>
+                     <div class="timeline-content">
+                        <h3>Present (3rd sem)<br>Master of Computer Applications(MCA)</h3>
+                          <p>Angadi Institute of Technology and Management<br>Belgaum, Karnataka<br>
+                            Visvesvaraya Technological University (VTU)
+                         
+                        </p>
+                     </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="internship" id="internship">
+    <h2 class="heading">Internships</h2>
+    <div class="timeline-items">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Nov 2024 - Jan 2025</div>
+            <div class="timeline-content">
+                <h3>Data Analytics Intern</h3>
+                <p>IIIT Dharwad — Worked on <b>Diwali Sales Data Analysis</b>, exploring data preprocessing, visualization, and insights reporting using Python & Power BI.</p>
+            </div>
+        </div>
+
+        <!--<div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <h3>Web Development Intern</h3>
+                <p>Unified Mentor — Built an interactive <b>E-commerce Frontend</b> with React, Tailwind CSS, and integrated API data fetching.</p>
+            </div>
+        </div>--> 
+
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skill" id="skill">
+  <h2 class="heading">Skills</h2>
+
+  <!-- Category Buttons -->
+  <div class="skill-tabs">
+    <button class="tab-btn active" data-target="all">🌟 All</button>
+    <button class="tab-btn" data-target="languages">🖥️ Languages</button>
+    <button class="tab-btn" data-target="libraries">📚 Libraries</button>
+    <button class="tab-btn" data-target="databases">🗄️ Databases</button>
+    <button class="tab-btn" data-target="tools">🛠️ Tools</button>
+    <button class="tab-btn" data-target="platforms">☁️ Platforms</button>
+  </div>
+
+  <!-- All Skills -->
+  <div class="skills-container active" id="all">
+    <!-- Languages -->
+    <div class="skill-circle"><img src="image/python.png" alt="Python"><p>Python</p></div>
+    <div class="skill-circle"><img src="image/java.png" alt="Java"><p>Java</p></div>
+    <div class="skill-circle"><img src="image/c.png" alt="C"><p>C</p></div>
+    <div class="skill-circle"><img src="image/html.png" alt="HTML"><p>HTML</p></div>
+    <div class="skill-circle"><img src="image/css.png" alt="CSS"><p>CSS</p></div>
+    <div class="skill-circle"><img src="image/javascript.png" alt="JavaScript"><p>JavaScript</p></div>
+    <div class="skill-circle"><img src="image/reactjs.png" alt="React"><p>React</p></div>
+    <div class="skill-circle"><img src="image/tailwindcss.png" alt="Tailwind"><p>Tailwind</p></div>
+
+    <!-- Libraries -->
+    <div class="skill-circle"><img src="image/pandas.png" alt="Pandas"><p>Pandas</p></div>
+    <div class="skill-circle"><img src="image/numpy.png" alt="NumPy"><p>NumPy</p></div>
+    <div class="skill-circle"><img src="image/matplotlib.png" alt="Matplotlib"><p>Matplotlib</p></div>
+    <div class="skill-circle"><img src="image/seaborn.png" alt="Seaborn"><p>Seaborn</p></div>
+
+    <!-- Databases -->
+    <div class="skill-circle"><img src="image/mongodb.png" alt="MongoDB"><p>MongoDB</p></div>
+    <div class="skill-circle"><img src="image/sql.png" alt="SQL"><p>SQL</p></div>
+    <div class="skill-circle"><img src="image/mysql.png" alt="MySQL"><p>MySQL</p></div>
+
+    <!-- Tools -->
+    <div class="skill-circle"><img src="image/powerbi.png" alt="Power BI"><p>Power BI</p></div>
+    <div class="skill-circle"><img src="image/excel.png" alt="Excel"><p>Excel</p></div>
+    <div class="skill-circle"><img src="image/powerpoint.png" alt="PowerPoint"><p>PowerPoint</p></div>
+    <div class="skill-circle"><img src="image/openai.png" alt="PowerPoint"><p>ChatGpt</p></div>
+
+    <!-- Platforms -->
+    <div class="skill-circle"><img src="image/jupyter.png" alt="Jupyter"><p>Jupyter</p></div>
+    <div class="skill-circle"><img src="image/visualstudiocode.png" alt="VS Code"><p>VS Code</p></div>
+    <div class="skill-circle"><img src="image/pycharm.png" alt="PyCharm"><p>PyCharm</p></div>
+  </div>
+
+  <!-- Languages -->
+  <div class="skills-container" id="languages">
+    <div class="skill-circle"><img src="image/python.png" alt="Python"><p>Python</p></div>
+    <div class="skill-circle"><img src="image/java.png" alt="Java"><p>Java</p></div>
+    <div class="skill-circle"><img src="image/c.png" alt="C"><p>C</p></div>
+    <div class="skill-circle"><img src="image/html.png" alt="HTML"><p>HTML</p></div>
+    <div class="skill-circle"><img src="image/css.png" alt="CSS"><p>CSS</p></div>
+    <div class="skill-circle"><img src="image/javascript.png" alt="JavaScript"><p>JavaScript</p></div>
+    <div class="skill-circle"><img src="image/reactjs.png" alt="React"><p>React</p></div>
+    <div class="skill-circle"><img src="image/tailwindcss.png" alt="Tailwind"><p>Tailwind</p></div>
+  </div>
+
+  <!-- Libraries -->
+  <div class="skills-container" id="libraries">
+    <div class="skill-circle"><img src="image/pandas.png" alt="Pandas"><p>Pandas</p></div>
+    <div class="skill-circle"><img src="image/numpy.png" alt="NumPy"><p>NumPy</p></div>
+    <div class="skill-circle"><img src="image/matplotlib.png" alt="Matplotlib"><p>Matplotlib</p></div>
+    <div class="skill-circle"><img src="image/seaborn.png" alt="Seaborn"><p>Seaborn</p></div>
+  </div>
+
+  <!-- Databases -->
+  <div class="skills-container" id="databases">
+    <div class="skill-circle"><img src="image/mongodb.png" alt="MongoDB"><p>MongoDB</p></div>
+    <div class="skill-circle"><img src="image/sql.png" alt="SQL"><p>SQL</p></div>
+    <div class="skill-circle"><img src="image/mysql.png" alt="MySQL"><p>MySQL</p></div>
+  </div>
+
+  <!-- Tools -->
+  <div class="skills-container" id="tools">
+    <div class="skill-circle"><img src="image/powerbi.png" alt="Power BI"><p>Power BI</p></div>
+    <div class="skill-circle"><img src="image/excel.png" alt="Excel"><p>Excel</p></div>
+    <div class="skill-circle"><img src="image/powerpoint.png" alt="PowerPoint"><p>PowerPoint</p></div>
+    <div class="skill-circle"><img src="image/openai.png" alt="ChatGPT"><p>ChatGPT</p></div>
+  </div>
+
+  <!-- Platforms -->
+  <div class="skills-container" id="platforms">
+    <div class="skill-circle"><img src="image/jupyter.png" alt="Jupyter"><p>Jupyter</p></div>
+    <div class="skill-circle"><img src="image/vscode.png" alt="VS Code"><p>VS Code</p></div>
+    <div class="skill-circle"><img src="image/pycharm.png" alt="PyCharm"><p>PyCharm</p></div>
+  </div>
+</section>
+
+<section class="services" id="services">
+    <h2 class="heading">Services</h2>
+    <div class="service-container">
+
+        <div class="service-box">
+            <i class='bx bx-bar-chart-alt'></i>
+            <h3>Data Analytics</h3>
+            <p>
+            Data preprocessing, trend analysis, and statistical modeling to uncover business insights.
+            Transform raw data into actionable insights using Python, Pandas, and advanced statistical methods 
+        to drive informed decision-making.
+      </p>
+        </div>
+
+        <div class="service-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Database Management</h3>
+            <p>
+        Design, implement, and optimize databases using SQL and MongoDB to ensure efficient data storage and retrieval.
+      </p>
+        </div>
+
+        <div class="service-box">
+            <i class='bx bx-line-chart'></i>
+            <h3>Data Visualization</h3>
+            <p>Create compelling visual representations of complex datasets using Power BI,
+                 Matplotlib, and Seaborn to reveal patterns and trends.</p>
+        </div>
+
+        <div class="service-box">
+            <i class='bx bx-laptop'></i>
+            <h3>Machine Learning</h3>
+            <p>Building predictive models and automation tools for business solutions.</p>
+        </div>
+
+    </div>
+</section>
+
+
+  <!-- Projects Section -->
+<section class="project" id="project">
+  <h2 class="heading">Project</h2>
+  <div class="projects-container">
+
+
+    <!-- Vendor Performance Analysis -->
+    <div class="project-box">
+      <img src="image/vendor-performance.png" alt="Vendor Performance Analysis">
+      <h3>Vendor Performance Analysis</h3>
+      <p>Developed an interactive Power BI dashboard to evaluate vendor performance using key KPIs such as on-time delivery,
+ defect rates, and cost efficiency.Improved decision-making by visualizing supplier trends, enabling 25 percentage faster
+ vendor selection and performance reviews
+      </p>
+      <a href="https://github.com/anshu1917/VendorPerformanceAnalysis" class="btn">View Project</a>
+    </div>
+   <!--Netflix-dashboard -->
+    <div class="project-box">
+      <img src="image/Netflix.png" alt="Netflix-dashboard">
+      <h3>Netflix-dashboard</h3>
+      <p> Designed an interactive Power BI dashboard analyzing Netflix titles dataset.
+        Provided insights into genre distribution, release year patterns, and regional content availability.
+      </p>
+      <a href="https://github.com/anshu1917/Netflix-dashboard" class="btn">View Project</a>
+    </div>
+
+    <!--Coffee_Sale-->
+    <div class="project-box">
+      <img src="image/coffee_sale.png" alt="Coffee_Sale">
+      <h3>Coffee_Sale</h3>
+      <p>The project focuses on analyzing coffee sales data and building an interactive Power BI dashboard to generate 
+        actionable business insights.Clean and preprocess sales data using Python.Perform Exploratory Data Analysis (EDA).
+        Build visualizations to track sales & customer behavior.Create KPIs for decision-making.
+      </p>
+      <a href="https://github.com/anshu1917/Coffee_Sale" class="btn">View Project</a>
+    </div>
+
+    <!-- Amazon Sales Data Analysis -->
+    <div class="project-box">
+      <img src="image/BRAND-ANALYTICS.png" alt="Amazon Sales Data Analysis">
+      <h3>Amazon Sales Data Analysis</h3>
+      <p> Cleaned and analyzed large-scale sales datasets using Python, Pandas, and Matplotlib; performed exploratory data
+ analysis (EDA), uncovered seasonal sales trends, and built data visualizations to support strategic business decisions.
+      </p>
+      <a href="https://github.com/anshu1917/Amazon-Sales-Analysis" class="btn">View Project</a>
+    </div>
+
+    <!-- Movie Analysis -->
+    <div class="project-box">
+      <img src="image/Movie.jpg" alt="Movie Analysis">
+      <h3>Movie Analysis</h3>
+      <p>Analyzed user behavior, content types, and viewing patterns using Python and Seaborn; conducted churn rate analysis
+     and identified top-performing genres through data visualization and content analytics.</p>
+      <a href="https://github.com/anshu1917/mymovieddb" class="btn">View Project</a>
+    </div>
+
+    <!-- Diwali Sales Data Analysis -->
+    <div class="project-box">
+      <img src="image/Diwali.jpg" alt="Diwali Sales Data Analysis">
+      <h3>Diwali Sales Data Analysis</h3>
+      <p>Performed exploratory data analysis (EDA) on Diwali sales dataset using Python to identify purchasing behavior across
+ customer demographics; created interactive visualizations to highlight key sales metrics and trends.
+      </p>
+      <a href="https://github.com/anshu1917/DiwaliSalesData" class="btn">View Project</a>
+    </div>
+
+    <!-- STUDENT_SCORE -->
+    <div class="project-box">
+      <img src="image/Student.jpg" alt="Student Score Analysis<">
+      <h3>Student Score Analysis</h3>
+      <p> Utilized Python, Pandas, and Scikit-learn for data preprocessing, visualization, and model training. 
+        Demonstrated strong understanding of student scores based on study hours and performance evaluation metrics
+      </p>
+      <a href="https://github.com/anshu1917/STUDENT_SCORE" class="btn">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+    
+    
+  <!-- Certificates Section -->
+<section class="certification" id="certificate">
+  <h2 class="heading">Certificate</h2>
+
+  <div class="certification-container">
+
+    <!-- Certificate 1 -->
+    <div class="certification-box">
+      <i class="bx bx-certification"></i>
+      <h3>Internship Certification</h3>
+      <p>
+        Completed certification in Data Analytics Intern IIIT Dharwad — Worked on Python, NumPy, Pandas & data visualization techniques.
+      </p>
+      <a href="https://github.com/anshu1917/Certificates/blob/main/Internship-6.pdf" target="_blank" class="btn">🎓 View Certificate</a>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="certification-box">
+      <i class="bx bx-certification"></i>
+      <h3>IIRS–ISRO Remote Sensing Certificate</h3>
+      <p>
+        Completed a 5-day online course on Remote Sensing Data Analytics for Crop Production Forecasting.
+      </p>
+      <a href="https://github.com/anshu1917/Certificates/blob/main/ISRO.pdf" target="_blank" class="btn">🎓 View Certificate</a>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="certification-box">
+      <i class="bx bx-certification"></i>
+      <h3>30 Days MasterClass in Data Analytics</h3>
+      <p>
+        Successfully completed the 30 Days MasterClass in Data Analytics with hands-on projects using Python & Power BI.
+      </p>
+      <a href="https://github.com/anshu1917/Certificates/blob/main/MasterClass.pdf" target="_blank" class="btn">🎓 View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+        
+
+<!-- Resume Section -->
+<section class="resume" id="resume">
+    <h2 class="heading">Resume</h2>
+    <div class="resume-content">
+        <p>Download my latest resume for a detailed view of my academic and professional journey.</p>
+        
+        <!-- PDF download -->
+        <a href="MY_cv.pdf" download class="btn">⬇ Download Resume</a>
+        
+        <!-- Optional: View in browser -->
+        <a href="MY_cv.pdf" target="_blank" class="btn">👀 View Resume</a>
+    </div>
+</section>
+
+
+
+    <section class="contact" id="contact">
+    <h2 class="heading">Contact Me</h2>
+    <div class="contact-container">
+        <!-- Left Side -->
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>Open to new opportunities, collaborations, and discussions.</p>
+
+            <div class="info-box"><i class='bx bxs-phone'></i><span>+91 9122387034</span></div>
+            <div class="info-box"><i class='bx bxs-envelope'></i><span>anshu172004@gmail.com</span></div>
+            <div class="info-box"><i class='bx bxl-linkedin'></i><a href="https://linkedin.com/in/anshukumari2317">linkedin.com/in/anshukumari2317</a></div>
+            <div class="info-box"><i class='bx bxl-github'></i><a href="https://github.com/anshu1917">github.com/anshu1917</a></div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="contact-form">
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <h3>Connect with Me</h3>
+            <p>Email: anshukumari2317@gmail.com</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+            <p class="copyright">© 2025 Anshu Kumari | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
